@@ -7,7 +7,7 @@ fip-monde http://direct.fipradio.fr/live/fip-webradio4.mp3
 fip-groove http://direct.fipradio.fr/live/fip-webradio3.mp3
 fip-reggae http://direct.fipradio.fr/live/fip-webradio6.mp3
 fip-electro http://direct.fipradio.fr/live/fip-webradio8.mp3
-france-musique-jazz http://icecast.radiofrance.fr/francemusiquelajazz-midfi.mp3
+france-musique-jazz http://icecast.radiofrance.fr/francemusiquelajazz-hifi.aac
 france-musique-bo http://icecast.radiofrance.fr/francemusiquelabo-midfi.mp3
 france-inter http://direct.franceinter.fr/live/franceinter-midfi.mp3
 france-culture http://direct.franceculture.fr/live/franceculture-midfi.mp3
