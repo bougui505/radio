@@ -1,7 +1,7 @@
 sing-sing http://stream.sing-sing.org:8000/singsingaac128
 fip http://direct.fipradio.fr/live/fip-midfi.mp3
-fip-rock http://direct.fipradio.fr/live/fip-webradio1.mp3
-fip-nouveauté http://direct.fipradio.fr/live/fip-webradio5.mp3
+fip-rock https://icecast.radiofrance.fr/fiprock-hifi.aac
+fip-nouveauté https://icecast.radiofrance.fr/fipnouveautes-hifi.aac
 fip-jazz http://direct.fipradio.fr/live/fip-webradio2.mp3
 fip-monde http://direct.fipradio.fr/live/fip-webradio4.mp3
 fip-groove http://direct.fipradio.fr/live/fip-webradio3.mp3
