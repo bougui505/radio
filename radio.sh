@@ -17,15 +17,9 @@ while :; do
     RADIO_TITLE=$(echo $RADIO_CHOSEN | awk '{print $1}')
     echo "Playing $RADIO_TITLE"
     if [[ $RADIO_URL != "quit" ]]; then
-        if [[ $RADIO_TITLE == "fip" ]]; then; tmux split-window "$DIRSCRIPT/get_fip_titles.sh"; tmux select-pane -t 1; fi
-        if [[ $RADIO_TITLE == "fip-jazz" ]]; then; tmux split-window "$DIRSCRIPT/get_fipjazz_titles.sh"; tmux select-pane -t 1; fi
-        if [[ $RADIO_TITLE == "fip-rock" ]]; then; tmux split-window "$DIRSCRIPT/get_fiprock_titles.sh"; tmux select-pane -t 1; fi
-        if [[ $RADIO_TITLE == "fip-nouveauté" ]]; then; tmux split-window "$DIRSCRIPT/get_fipnouveaute_titles.sh"; tmux select-pane -t 1; fi
+        $DIRSCRIPT/open_info.sh $RADIO_TITLE
         mpv $RADIO_URL
-        if [[ $RADIO_TITLE == "fip" ]]; then tmux kill-pane -a -t 1; fi
-        if [[ $RADIO_TITLE == "fip-jazz" ]]; then tmux kill-pane -a -t 1; fi
-        if [[ $RADIO_TITLE == "fip-rock" ]]; then tmux kill-pane -a -t 1; fi
-        if [[ $RADIO_TITLE == "fip-nouveauté" ]]; then tmux kill-pane -a -t 1; fi
+        $DIRSCRIPT/close_info.sh $RADIO_TITLE
     else;
         break
     fi
