@@ -12,3 +12,4 @@ if [[ $RADIO_TITLE == "fip" ]]; then; tmux split-window "$DIRSCRIPT/get_fip_titl
 if [[ $RADIO_TITLE == "fip-jazz" ]]; then; tmux split-window "$DIRSCRIPT/get_fipjazz_titles.sh"; tmux select-pane -t 1; fi
 if [[ $RADIO_TITLE == "fip-rock" ]]; then; tmux split-window "$DIRSCRIPT/get_fiprock_titles.sh"; tmux select-pane -t 1; fi
 if [[ $RADIO_TITLE == "fip-nouveauté" ]]; then; tmux split-window "$DIRSCRIPT/get_fipnouveaute_titles.sh"; tmux select-pane -t 1; fi
+if [[ $RADIO_TITLE == "france-musique-jazz" ]]; then; tmux split-window "$DIRSCRIPT/get_francemusiquejazz_titles.sh"; tmux select-pane -t 1; fi

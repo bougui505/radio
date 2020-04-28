@@ -11,3 +11,4 @@ if [[ $RADIO_TITLE == "fip" ]]; then tmux kill-pane -a -t 1; fi
 if [[ $RADIO_TITLE == "fip-jazz" ]]; then tmux kill-pane -a -t 1; fi
 if [[ $RADIO_TITLE == "fip-rock" ]]; then tmux kill-pane -a -t 1; fi
 if [[ $RADIO_TITLE == "fip-nouveauté" ]]; then tmux kill-pane -a -t 1; fi
+if [[ $RADIO_TITLE == "france-musique-jazz" ]]; then tmux kill-pane -a -t 1; fi
