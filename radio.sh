@@ -21,8 +21,13 @@ while :; do
             tmux split-window "$DIRSCRIPT/get_fip_titles.sh"
             tmux select-pane -t 1
         fi
+        if [[ $RADIO_TITLE == "fip-jazz" ]]; then
+            tmux split-window "$DIRSCRIPT/get_fipjazz_titles.sh"
+            tmux select-pane -t 1
+        fi
         mpv $RADIO_URL
         if [[ $RADIO_TITLE == "fip" ]]; then tmux kill-pane -a -t 1; fi
+        if [[ $RADIO_TITLE == "fip-jazz" ]]; then tmux kill-pane -a -t 1; fi
     else;
         break
     fi
