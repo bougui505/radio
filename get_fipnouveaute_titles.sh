@@ -8,7 +8,7 @@
 
 function get_fip_titles () {
     while :; do
-        lynx -dump https://www.fip.fr/jazz/webradio | grep -A24 "En direct sur FIP Jazz" | grep -v "* Pochette"  | sed 's/(BUTTON)/ /g'
+        lynx -dump https://www.fip.fr/tout-nouveau-tout-fip/webradio | grep -A24 "En direct sur FIP Nouveauté" | grep -v "* Pochette"  | sed 's/(BUTTON)/ /g'
         hr -
         sleep 10
     done
