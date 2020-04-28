@@ -8,12 +8,18 @@ DIRSCRIPT="$(dirname "$(readlink -f "$0")")"
 
 function radio_menu () {
     cat $DIRSCRIPT/radio_list.txt =(echo "quit quit")\
-        | fzf --tac --with-nth=1 \
-        | awk '{print $2}'
+        | fzf --tac --with-nth=1
+}
+
+function get_fip_titles () {
+    lynx -dump https://www.fip.fr | tee  >(grep -i précédemment -A 8 | grep -v BUTTON | grep -v Pochette) >(grep "Écouter le direct" | sed 's/Écouter le direct//') > /dev/null
 }
 
 while :; do
-    RADIO_URL=$(radio_menu)
+    RADIO_CHOSEN=$(radio_menu)
+    RADIO_URL=$(echo $RADIO_CHOSEN | awk '{print $2}')
+    RADIO_TITLE=$(echo $RADIO_CHOSEN | awk '{print $1}')
+    echo "Playing $RADIO_TITLE"
     if [[ $RADIO_URL != "quit" ]]; then
         mpv $RADIO_URL
     else;
