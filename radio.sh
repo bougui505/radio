@@ -11,17 +11,18 @@ function radio_menu () {
         | fzf --tac --with-nth=1
 }
 
-function get_fip_titles () {
-    lynx -dump https://www.fip.fr | tee  >(grep -i précédemment -A 8 | grep -v BUTTON | grep -v Pochette) >(grep "Écouter le direct" | sed 's/Écouter le direct//') > /dev/null
-}
-
 while :; do
     RADIO_CHOSEN=$(radio_menu)
     RADIO_URL=$(echo $RADIO_CHOSEN | awk '{print $2}')
     RADIO_TITLE=$(echo $RADIO_CHOSEN | awk '{print $1}')
     echo "Playing $RADIO_TITLE"
     if [[ $RADIO_URL != "quit" ]]; then
+        if [[ $RADIO_TITLE == "fip" ]]; then
+            tmux split-window "$DIRSCRIPT/get_fip_titles.sh"
+            tmux select-pane -t 1
+        fi
         mpv $RADIO_URL
+        if [[ $RADIO_TITLE == "fip" ]]; then tmux kill-pane -a -t 1; fi
     else;
         break
     fi
