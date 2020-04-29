@@ -1,14 +1,14 @@
-sing-sing http://stream.sing-sing.org:8000/singsingaac128
-fip https://icecast.radiofrance.fr/fip-hifi.aac
-fip-rock https://icecast.radiofrance.fr/fiprock-hifi.aac
-fip-nouveauté https://icecast.radiofrance.fr/fipnouveautes-hifi.aac
-fip-jazz https://icecast.radiofrance.fr/fipjazz-hifi.aac 
-fip-monde https://icecast.radiofrance.fr/fipworld-hifi.aac
-fip-groove https://icecast.radiofrance.fr/fipgroove-hifi.aac
-fip-reggae https://icecast.radiofrance.fr/fipreggae-hifi.aac
-fip-electro https://icecast.radiofrance.fr/fipelectro-hifi.aac
-france-musique-jazz http://icecast.radiofrance.fr/francemusiquelajazz-hifi.aac
-france-musique-bo https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac
-france-inter https://icecast.radiofrance.fr/franceinter-hifi.aac
-france-culture https://icecast.radiofrance.fr/franceculture-hifi.aac
-france-info http://direct.franceinfo.fr/live/franceinfo-midfi.mp3
+sing-sing http://stream.sing-sing.org:8000/singsingaac128 http://www.sing-sing-bis.org
+fip https://icecast.radiofrance.fr/fip-hifi.aac https://www.fip.fr/titres-diffuses
+fip-rock https://icecast.radiofrance.fr/fiprock-hifi.aac https://www.fip.fr/titres-diffuses?station=rock
+fip-nouveauté https://icecast.radiofrance.fr/fipnouveautes-hifi.aac https://www.fip.fr/titres-diffuses?station=tout-nouveau-tout-fip
+fip-jazz https://icecast.radiofrance.fr/fipjazz-hifi.aac https://www.fip.fr/titres-diffuses?station=jazz
+fip-monde https://icecast.radiofrance.fr/fipworld-hifi.aac https://www.fip.fr/titres-diffuses?station=musiques-du-monde
+fip-groove https://icecast.radiofrance.fr/fipgroove-hifi.aac https://www.fip.fr/titres-diffuses?station=groove
+fip-reggae https://icecast.radiofrance.fr/fipreggae-hifi.aac https://www.fip.fr/titres-diffuses?station=reggae
+fip-electro https://icecast.radiofrance.fr/fipelectro-hifi.aac https://www.fip.fr/titres-diffuses?station=electro
+france-musique-jazz http://icecast.radiofrance.fr/francemusiquelajazz-hifi.aac https://www.francemusique.fr/programmes/oeuvres-diffusees/la-jazz
+france-musique-bo https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac https://www.francemusique.fr/programmes/oeuvres-diffusees/evenementielle
+france-inter https://icecast.radiofrance.fr/franceinter-hifi.aac https://www.franceinter.fr
+france-culture https://icecast.radiofrance.fr/franceculture-hifi.aac https://www.franceculture.fr
+france-info http://direct.franceinfo.fr/live/franceinfo-midfi.mp3 https://www.francetvinfo.fr/en-direct/radio.html

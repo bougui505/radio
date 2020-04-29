@@ -15,11 +15,15 @@ while :; do
     RADIO_CHOSEN=$(radio_menu)
     RADIO_URL=$(echo $RADIO_CHOSEN | awk '{print $2}')
     RADIO_TITLE=$(echo $RADIO_CHOSEN | awk '{print $1}')
+    RADIO_WEBSITE=$(echo $RADIO_CHOSEN | awk '{print $3}')
     echo "Playing $RADIO_TITLE"
     if [[ $RADIO_URL != "quit" ]]; then
-        $DIRSCRIPT/open_info.sh $RADIO_TITLE
+        $DIRSCRIPT/open_info.sh $RADIO_WEBSITE
+        $DIRSCRIPT/refresh_info.sh &
+        REFRESHPID=$!
         mpv $RADIO_URL
-        $DIRSCRIPT/close_info.sh $RADIO_TITLE
+        kill $REFRESHPID
+        $DIRSCRIPT/close_info.sh
     else;
         break
     fi
