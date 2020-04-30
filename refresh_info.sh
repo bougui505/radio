@@ -7,5 +7,5 @@
 
 while :; do
     tmux send-keys -t bottom R
-    sleep 10
+    sleep 60
 done
