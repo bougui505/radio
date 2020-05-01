@@ -8,5 +8,5 @@
 DIRSCRIPT="$(dirname "$(readlink -f "$0")")"
 RADIO_WEBSITE=$1
 
-tmux split-window "w3m '$RADIO_WEBSITE'"
+tmux split-window -l 30 "w3m '$RADIO_WEBSITE'"
 tmux select-pane -t 1
