@@ -8,7 +8,7 @@ DIRSCRIPT="$(dirname "$(readlink -f "$0")")"
 
 function radio_menu () {
     cat $DIRSCRIPT/radio_list.txt =(echo "quit quit")\
-        | fzf --tac --with-nth=1
+        | /home/bougui/source/fzf/bin/fzf --tac --with-nth=1
 }
 
 while :; do
