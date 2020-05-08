@@ -1,4 +1,4 @@
-sing-sing http://stream.sing-sing-bis.org:8000/singsingogg128 http://www.sing-sing-bis.org
+sing-sing http://stream.sing-sing-bis.org:8000/singsingaac256 http://www.sing-sing-bis.org
 fip https://icecast.radiofrance.fr/fip-hifi.aac https://www.fip.fr/titres-diffuses
 fip-rock https://icecast.radiofrance.fr/fiprock-hifi.aac https://www.fip.fr/titres-diffuses?station=rock
 fip-nouveauté https://icecast.radiofrance.fr/fipnouveautes-hifi.aac https://www.fip.fr/titres-diffuses?station=tout-nouveau-tout-fip
