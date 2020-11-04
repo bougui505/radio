@@ -18,12 +18,12 @@ while :; do
     RADIO_WEBSITE=$(echo $RADIO_CHOSEN | awk '{print $3}')
     echo "Playing $RADIO_TITLE"
     if [[ $RADIO_URL != "quit" ]]; then
-        $DIRSCRIPT/open_info.sh $RADIO_WEBSITE
-        $DIRSCRIPT/refresh_info.sh &
-        REFRESHPID=$!
+        # $DIRSCRIPT/open_info.sh $RADIO_WEBSITE
+        # $DIRSCRIPT/refresh_info.sh &
+        # REFRESHPID=$!
         mpv $RADIO_URL
-        kill $REFRESHPID
-        $DIRSCRIPT/close_info.sh
+        # kill $REFRESHPID
+        # $DIRSCRIPT/close_info.sh
     else;
         break
     fi
