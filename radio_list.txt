@@ -12,4 +12,4 @@ france-musique-bo https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac http
 france-inter https://icecast.radiofrance.fr/franceinter-hifi.aac https://www.franceinter.fr
 france-culture https://icecast.radiofrance.fr/franceculture-hifi.aac https://www.franceculture.fr
 france-info http://direct.franceinfo.fr/live/franceinfo-midfi.mp3 https://www.francetvinfo.fr/en-direct/radio.html
-radio-mlk https://stream.radiomlk.fr/listen/radio_mlk/radio256.mp3
+radio-mlk https://stream.radiomlk.fr/public/radio_mlk
